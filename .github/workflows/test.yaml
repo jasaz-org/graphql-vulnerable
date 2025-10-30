@@ -50,7 +50,7 @@ jobs:
             --access-token "${{ secrets.GH_TOKEN }}" \
             --aqua-key "${{ secrets.AQUA_KEY }}" \
             --aqua-secret "${{ secrets.AQUA_SECRET }}" \
-            --artifact-path "my-image-name:${{ env.tag-version }}" 
+            --artifact-path "$GITHUB_REPOSITORY:$GITHUB_RUN_NUMBER" 
 
             # The docker image name:tag of the newly built image
             # --artifact-path "my-image-name:${{ env.tag-version }}" 
