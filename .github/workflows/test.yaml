@@ -45,8 +45,9 @@ jobs:
           fi
           BINDIR="." sh install.sh
           rm install.sh install.sh.checksum
+          # Note: secrets.GITHUB_TOKEN has been updated to secrets.GH_TOKEN as Github reserves the variable GITHUB_TOKEN 
           ./billy generate \
-            --access-token "${{ secrets.GITHUB_TOKEN }}" \
+            --access-token "${{ secrets.GH_TOKEN }}" \
             --aqua-key "${{ secrets.AQUA_KEY }}" \
             --aqua-secret "${{ secrets.AQUA_SECRET }}" \
             --artifact-path "my-image-name:${{ env.tag-version }}" 
