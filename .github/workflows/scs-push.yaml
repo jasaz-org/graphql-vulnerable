@@ -27,3 +27,4 @@ jobs:
           AQUA_URL: https://api.asia-1.supply-chain.cloud.aquasec.com
           CSPM_URL: https://asia-1.api.cloudsploit.com
           # For http/https proxy configuration add env vars: HTTP_PROXY/HTTPS_PROXY, CA-CRET (path to CA certificate)
+          
